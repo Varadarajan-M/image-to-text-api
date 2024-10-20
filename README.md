@@ -1,8 +1,6 @@
-Here’s the markdown you requested for the **Image to Text API**:
 
----
 
-## ### Image to Text API
+## Image to Text API
 
 This API is designed specifically to extract key-value pairs from images, enabling users to perform meaningful operations with the extracted data. It leverages Google's [Gemini 1.5 Pro model](https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-pro) for advanced image-to-text conversions.
 

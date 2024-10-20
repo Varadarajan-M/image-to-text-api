@@ -37,6 +37,9 @@ const generateContent = async (prompt, imagePart) => {
   return generatedContent.response.text();
 };
 
+
+
+
 // Endpoint to process images from URLs
 app.post('/process-image', async (req, res) => {
   const { imageUrl } = req.body;
@@ -69,6 +72,10 @@ app.post('/process-image', async (req, res) => {
     console.error("Error processing image:", error);
     return res.status(500).json({ error: "Failed to process image." });
   }
+});
+
+app.get('*', (req, res) => {
+  res.json({message: 'Hello! This is an experimental API that extracts key-value pairs from an image. Please use the /process-image endpoint to process images.'});
 });
 
 // Start the server
